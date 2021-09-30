@@ -30,22 +30,23 @@
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- title -->
-    <title>Preguntas Frecuentes | PyME</title>
+    <title>Nuestros Productos | PyME</title>
 </head>
+
 
 <body>
     <!--inicio header-->
     <header id="home">
-        <h1><a href="../index.html" class=logo-pyme>PyME</a></h1><br>        
+        <h1><a href="../index.html" class=logo-pyme>PyME</a></h1><br>
          
         <!--inicio nav-->
     <div style="height: 30px;">
         <nav class="desktopNavbar">
             <a href="../index.html" class="nav-home">inicio</a>
-            <a href="../index.html#nosotros"class="nav-about">nosotros</a>
-            <a href="../index.html#producto"class="nav-product">productos</a>
-            <a href="Contactanos.html" class="nav-contact">contacto</a>
-            <a href="#home" class="nav-faq">preguntas frecuentes</a>
+            <a href="../index.html#nosotros" class="nav-about">nosotros</a>
+            <a href="#home" class="nav-product">productos</a>
+            <a href="contactanos.html" class="nav-contact">contacto</a>
+            <a href="preguntas-frecuentes.html" class="nav-faq">preguntas frecuentes</a>
         </nav>
     </div>
 
@@ -67,21 +68,21 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Impresiones 3D</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="#home">Preguntas Frecuentes</a>
+                                <a class="dropdown-item" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="../index.html#producto">Productos</a>
+                                <a class="dropdown-item" href="#home">Productos</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item" href="Contactanos.html">Pedi tus Impresiones!</a>
+                                <a class="dropdown-item" href="contactanos.html">Pedi tus Impresiones!</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contactanos.html">Contactanos!</a>
+                        <a class="nav-link" href="contactanos.html">Contactanos!</a>
                     </li>
                 </ul>
             </div>
@@ -90,37 +91,79 @@
         <!--fin nav-->
     </header>
     <!--fin header-->
-<br>
-<hr>
-<br>
-    <!-- inicio main -->
+
+    <!--inicio main-->
     <main>
-        <h2>preguntas frecuentes</h2>
-        <div class="question01" data-aos="fade-right">
-            <h3>¿como realizo mis <br> pedidos de impresión?</h3>
-            <p class="faqA-left">Podes hacer tus pedidos enviandonos un mail o escribiendonos en cualquiera de nuestras redes. 
-            <br> Para mas Información visita nuestra pagina de <a href="Contactanos.html" style="color: bisque ; background-color: #6a4f4b;">Contacto</a>
-            </p>
+        <!-- inicio grid -->
+        <section id="grid">        
+            <div data-aos="fade-down-right"><img src="../public/img/product01.jpeg" alt="producto 3D" id="product01" class="gridImg1"></div>
+            <div data-aos="fade-down"><img src="../public/img/product02.jpg" alt="producto 3D" id="product02" class="gridImg2"></div>
+            <div data-aos="fade-down-left"><img src="../public/img/product03.jpg" alt="producto 3D" id="product03" class="gridImg1"></div>
+            <div data-aos="fade-right"><img src="../public/img/product04.jpg" alt="producto 3D" id="product04" class="gridImg2"></div>
 
-            <h3>¿que impresora 3D utilizan?</h3>
-            <p class="faqA-left">La Artillery Genius es una impresora 3D cartesiana, todo en uno. Tiene controladores paso a paso ultra silenciosos, extrusor de accionamiento directo, eje Z dual, cama vitrocerámica con calefacción de CA (superficie muy plana), pantalla táctil TFT y sensor de parada de extremo de proximidad magnética para proporcionar una larga vida útil y la impresión 3D silenciosa y precisa.
-            <br>Para especifiaciones tecnicas visita su pagina oficial: <a href="https://artillery3d.es/artillery-genius/" target="_blank" style="color: bisque ; background-color: #6a4f4b;">artillery3d.es</a> 
-            </p>
-        </div>
+            <div class="tabla">
+                <!--tabla de especificaciones del material de impresion-->
+                <table border id="gridTable">
+                <caption><strong>ESPECIFICACIONES</strong></caption>
+                    <thead>
+                        <tr>
+                            <th>Colores</th>
+                            <th>Filamento</th>
+                            <th>Grosor</th>
+                            <th>Calidad</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>Amarillo</td>
+                            <td>PLA+</td>
+                            <td>1,75mm</td>
+                            <td>Premium Quality</td>
+                        </tr>
+                        <tr>
+                            <td>Azul</td>
+                            <td>PLA+</td>
+                            <td>1,75mm</td>
+                            <td>Premium Quality</td>
+                        </tr>
+                        <tr>
+                            <td>Blanco</td>
+                            <td>PLA+</td>
+                            <td>1,75mm</td>
+                            <td>Premium Quality</td>
+                        </tr>
+                        <tr>
+                            <td>Negro</td>
+                            <td>PLA+</td>
+                            <td>1,75mm</td>
+                            <td>Premium Quality</td>
+                        </tr>
+                        <tr>
+                            <td>Platino</td>
+                            <td>PLA+</td>
+                            <td>1,75mm</td>
+                            <td>Premium Quality</td>
+                        </tr>
+                        <tr>
+                            <td>Rojo</td>
+                            <td>PLA+</td>
+                            <td>1,75mm</td>
+                            <td>Premium Quality</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <div class="question02" data-aos="fade-left">
-            <h3>¿porque imprimir en 3D?</h3>
-            <p class="faqA-right">Tus impresiones 3D pueden tener mucho mas uso de el que piensas. Puedes crear tanto Productos de consumo y uso cotidiano; Moldes para mas creación; Repuestos de lo que sea dificiles de conseguir siendo mas baratos y de buena calidad; Prototipos funcionales para tus proyectos o incluso todo tipo de regalos especiales.
-            </p>
-
-            <h3>¿Lorem, ipsum dolor.?</h3>
-            <p class="faqA-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum tenetur, delectus vel architecto nihil cupiditate natus deserunt labore dolor distinctio corrupti perferendis soluta quos aliquam. Ad voluptatum suscipit illum delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laudantium minus quis neque saepe dignissimos explicabo animi doloremque earum.
-            </p>
-        </div>
+            <div data-aos="fade-left"><img src="../public/img/product05.jpg" alt="producto 3D" id="product05" class="gridImg1"></div>
+            <div data-aos="fade-up-right"><img src="../public/img/product06.jpg" alt="producto 3D" id="product06" class="gridImg2"></div>
+            <div data-aos="fade-up"><img src="../public/img/product07.png" alt="producto 3D" id="product07" class="gridImg1"></div>
+            <div data-aos="fade-up-left"><img src="../public/img/product08.jpg" alt="producto 3D" id="product08" class="gridImg2"></div>
+        </section>
+        <!-- fin grid -->
     </main>
     <!-- fin main -->
-    <br>
-    <hr>
+<hr>
     <!--pie de pagina-->
     <footer>
         <div class="container">
@@ -132,8 +175,8 @@
                 <div class="items">
                     <h3>Compañia</h3>
                     <ul>
-                        <li><a href="pages/Nosotros.html">Acerca De</a></li>
-                        <li><a href="#home">Servicio</a></li>
+                        <li><a href="pages/nosotros.html">Acerca De</a></li>
+                        <li><a href="pages/preguntas-frecuentes.html">Servicio</a></li>
                     </ul>                          
                 </div>
 
@@ -142,7 +185,7 @@
                     <ul>
                         <li><a href="https://facebook.com">Facebook</a></li>
                         <li><a href="https://instagram.com">Instagram</a></li>
-                        <li><a href="pages/Contactanos.html">Contacto</a></li>
+                        <li><a href="pages/contactanos.html">Contacto</a></li>
                         <li><a href="https://github.com">GitHub</a></li>
                     </ul>                          
                 </div>
