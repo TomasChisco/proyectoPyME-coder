@@ -1,0 +1,450 @@
+@import "variables";
+/* INICIO CSS */
+
+/* INICIO ESTILO DE PAGINAS */
+body {
+    justify-content: center;
+    text-align: center;
+    background: $mainColor;
+    background: linear-gradient(180deg, $mainColor 0%, $mainColor 75%, $mainColorDark 100%);
+    color: $fontColor;
+}
+
+main {
+    background-color: $mainColor;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+a {
+    color: inherit;
+}
+
+/* FIN ESTILO DE PAGINAS */
+
+/* INICIO TITLES */
+
+.logo-pyme {
+    font-family: 'monoton', sans-serif;
+    font-size: 75px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    border: 1px solid $mainColorLight;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px #000;
+    text-decoration-line: underline
+}
+
+h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;margin: 0px;
+    text-shadow: 2px 2px 4px #000;
+    text-decoration-line: underline
+}
+
+.about02 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0px 16px;
+    margin: 10px;
+    letter-spacing: 15px;
+    text-decoration-line: underline
+}
+
+/* FIN TITLES */
+
+/* INICIO NAV-BAR */
+nav {
+    display: inline-flex;
+    font-family: 'Comfortaa';
+    font-size: 1.4rem;
+    font-weight: 300;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 100%;
+    
+}
+
+.mobileNavbar {
+    display: none;
+}
+
+.nav-home {
+    padding: 0px 16px;
+    transition: all 0.2s;
+}
+
+
+.nav-about {
+    padding: 0px 16px;
+    transition: all 0.2s;
+}
+
+
+.nav-product {
+    padding: 0px 16px;
+    transition: all 0.2s;
+}
+
+
+.nav-contact {
+    padding: 0px 16px;
+    transition: all 0.2s;
+}
+
+.nav-faq {
+    padding: 0px 16px;
+    transition: all 0.2s;
+}
+
+.boton {
+    color: $fontColor;
+    background-color: $mainColor;
+    border: 3px solid $mainColorLight;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size:16px;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: background 0.8s;
+}
+    
+/* FIN NAV-BAR */
+
+/* INICIO TXT */
+
+.about {
+    font-family: 'Comfortaa';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#nosotros {
+    padding: 15px 1px 15px 1px;
+    border: solid 10px $mainColorLight;
+    margin: 5px;
+}
+
+.contacto-numero {
+    font-family: 'Comfortaa';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.numero {
+    color: $fontColor;
+}
+
+.question01 {
+    display: inline-block;
+    transform: translate(-25vh);
+}
+
+.question02{
+    display: inline-block;
+    transform: translate(25vh);
+}
+
+.faqA-left {
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.faqA-right {
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    font-weight: 300;
+    text-align: right;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+/* FIN TXT */
+
+/* INICIO MULTIMEDIA */
+.logo-ig {
+    padding: 18px 16px;
+    margin-left: 5px;
+}
+
+.logo-fb {
+    padding: 18px 16px;
+}
+
+.logo-mail {
+    padding: 18px 16px;
+    margin-left: 5px;
+}
+
+.aboutImgs {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    height: 200px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/* FIN MULTIMEDIA */
+
+/* INICIO GRID & TABLA */
+
+#grid {
+    background-color: $mainColor;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        'product01' 'product02' 'product03'
+        'product04' 'gridTable' 'product05' 
+        'product06' 'product07' 'product08'
+    ;
+}
+
+#product01 {grid-area: product01;}
+#product02 {grid-area: product02;}
+#product03 {grid-area: product03;}
+#product04 {grid-area: product04;}
+#product05 {grid-area: product05;}
+#product06 {grid-area: product06;}
+#product07 {grid-area: product07;}
+#product08 {grid-area: product08;}
+#gridTable {grid-area: gridTable;}
+
+.tabla {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+    padding: 16px 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.gridImg1 {
+    transition: all 0.2s ease-in-out;
+}
+.gridImg1:hover {
+    transform: rotateZ(-6deg);
+}
+.gridImg2 {
+    transition: all 0.2s ease-in-out;
+}
+.gridImg2:hover {
+    transform: rotateZ(6deg);
+}
+/* FIN GRID & TABLA */
+
+/* INICIO ANIMACIONES Y TRANSICIONES */
+
+.logo-pyme:hover {
+    box-shadow: 1px 1px $mainColorDark, 2px 2px $mainColorDark, 3px 3px $mainColorDark;
+    }
+
+.nav-home:hover {
+    color: $fontColor;
+    background-color: $mainColorLight;
+    font-size: 1.55rem;
+}
+
+.nav-about:hover {
+    color: $fontColor;
+    background-color: $mainColorLight;
+    font-size: 1.55rem;
+}
+
+.nav-product:hover {
+    color: $fontColor;
+    background-color: $mainColorLight;
+    font-size: 1.55rem;
+}
+
+.nav-contact:hover {
+    color: $fontColor;
+    background-color: $mainColorLight;
+    font-size: 1.55rem;
+}
+
+.nav-faq:hover {
+    color: $fontColor;
+    background-color: $mainColorLight;
+    font-size: 1.55rem;
+}
+
+.boton:hover {
+    background:$mainColorLight radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    color: $fontColor;
+}
+    
+.boton:active{
+    background-color:$mainColorLight;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+#manoDesktop:hover {
+    animation-duration: 0.5s;
+    animation-name: zoomOutImg;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomOutImg {
+    0% {
+        height: 338;
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* FIN ANIMACIONES Y TRANSICIONES */
+
+/* INICIO MEDIA QUERY */
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .desktopNavbar {
+        display: none;
+    }
+
+    .mobileNavbar {
+        display: flex;
+    }
+
+    .about02 {
+        font-size: 40px;
+    }
+
+    .aboutImgs {
+        height: 100px;
+    }
+
+    .wideAboutImgs {
+        width: 325px;
+    }
+
+    .nav-home {
+        padding: 0px 3px;
+        font-size: 1.2rem; 
+    }
+    
+    .nav-about {
+        padding: 0px 3px;
+        font-size: 1.2rem;
+    }
+    
+    .nav-product {
+        padding: 0px 3px;
+        font-size: 1.2rem;
+    }
+    
+    .nav-contact {
+        padding: 0px 3px;
+        font-size: 1.2rem;
+    }
+    
+    .nav-faq {
+        padding: 0px 3px;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1370px) {
+    .question01{ 
+        display: inline;
+        transform: translate(0vh);
+    }
+
+    .question02{
+        display: inline ;
+        transform: translate(0vh);
+    }
+
+    .faqA-left {
+        width: 470px;
+        text-align: center;
+        display: inline;
+    }
+
+    .faqA-right {
+        width: 470px;
+        text-align: center;
+        justify-content: center;
+        display: inline;
+    }
+
+    h3 { 
+        padding: 15px;
+    }       
+}
+
+@media only screen and (max-width: 320px){
+    .nav-home {
+        padding: 0px 3px;
+        font-size: 1.1rem; 
+    }
+    
+    .nav-about {
+        padding: 0px 3px;
+        font-size: 1.1rem;
+    }
+    
+    .nav-product {
+        padding: 0px 3px;
+        font-size: 1.1rem;
+    }
+    
+    .nav-contact {
+        padding: 0px 3px;
+        font-size: 1.1rem;
+    }
+    
+    .nav-faq {
+        padding: 0px 3px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:640px){
+    .items{
+            flex-basis: 80%;
+            margin: auto;
+}
+}
+/* FIN MEDIA QUERY */
+
+/* FIN CSS */
+
